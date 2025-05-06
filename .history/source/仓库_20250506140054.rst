@@ -28,7 +28,7 @@
 .. image:: _images/jianhuoyuan.png
     :target: _images/jianhuoyuan.png
     :alt: 零货下架操作界面
-    :width: 800px
+    :width: 1000px
     
 
 
