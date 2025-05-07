@@ -16,7 +16,12 @@
    
 
 
+.. raw:: html
 
+   <a href="example.jpg" target="_blank" rel="noopener noreferrer">
+       <img src="example.jpg" alt="这是一张示例图片" style="width: 800px; display: block; margin: 0 auto;">
+   </a>
+ 
 
 
 

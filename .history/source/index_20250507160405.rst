@@ -16,26 +16,6 @@
    
 
 
+.. raw:: html
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   <a href="#" onclick="window.open('https://www.example.com', '_blank'); return false;">在新窗口打开链接</a>
