@@ -1,0 +1,11 @@
+
+h1 {
+    text-align: center;
+}
+
+/* 设置图片样式：可以设置图片的边框、圆角、阴影等样式。 */
+img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}                               

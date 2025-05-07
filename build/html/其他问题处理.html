@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>其他问题处理 &mdash; BXASOP Ver2025050601 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a2e878b3" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=c9d263f3"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+      <script src="_static/my_custom.js?v=b07eb310"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="仓库" href="%E4%BB%93%E5%BA%93.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E4%BB%93%E5%BA%93.html">仓库</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">其他问题处理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">追溯码上传异常处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1、未激活的码、不合格的码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">2、上下级关联的码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">3、客户未对码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">4、上传重复单据</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BXASOP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">其他问题处理</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/其他问题处理.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>其他问题处理<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>追溯码上传异常处理<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>每日上午8:00WMS会自动上传追溯码到码上放心平台，其中会出未激活的码、不合格的码、上下级关系的码以及监管客户未对码等问题，导致单据未上传到码上放心平台，客户不能及时接受到追溯码影响客户体验的问题。以下是每个问题的解决方案：</p>
+<section id="id3">
+<h3>1、未激活的码、不合格的码<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>上传结果提示：</p>
+<ul class="simple">
+<li><p>单据上传失败！：存在未激活的码:84513450000598520572共1个码</p></li>
+<li><p>单据上传失败！：以下码制校验不合格：90584950001623780161</p></li>
+</ul>
+<p>首先需要在 <a class="reference external" href="https://www.kdocs.cn/l/cthkkeqtbx1g">追溯码上传异常处理</a> 登记未激活的、不合格的码对应的商品名称、单位名称、单据号、建立时间、复核员、上传失败的原因，然后在“电子监管码记录修改”里查询此码并删除，最后重新查询此单再上传单据号。</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/追溯码上传异常处理.png"><img alt="追溯码上传异常处理" src="_images/%E8%BF%BD%E6%BA%AF%E7%A0%81%E4%B8%8A%E4%BC%A0%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.png" style="width: 800px;" />
+</a>
+</figure>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/未激活码_1.png"><img alt="未激活码_1" src="_images/%E6%9C%AA%E6%BF%80%E6%B4%BB%E7%A0%81_1.png" style="width: 800px;" />
+</a>
+</figure>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/未激活码_2.png"><img alt="未激活码_2" src="_images/%E6%9C%AA%E6%BF%80%E6%B4%BB%E7%A0%81_2.png" style="width: 800px;" />
+</a>
+</figure>
+</section>
+<section id="id4">
+<h3>2、上下级关联的码<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>上传结果提示：</p>
+<ul class="simple">
+<li><p>单据上传失败！：有上下级关联码：[84112740002781421895（ 下级 ）, 86219380002249061490（ 上级 ）]；</p></li>
+</ul>
+<p>若上下级码的数量是对应关系则只需要保留上级码即可（ 末尾需要加英文状态下的 “ , ” ），反之只需删除上级码。</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/上级码.png"><img alt="上级码" src="_images/%E4%B8%8A%E7%BA%A7%E7%A0%81.png" style="width: 800px;" />
+</a>
+</figure>
+</section>
+<section id="id5">
+<h3>3、客户未对码<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>上传结果提示：</p>
+<ul class="simple">
+<li><p>空白</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/未对码_1.png"><img alt="未对码_1" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_1.png" style="width: 800px;" />
+</a>
+</figure>
+<p>首先在码上放心平台查询是否添加此客户，然后再重新对码，最后运行定时任务重新上传单据，若查询不到信息需反馈给质管部。</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/未对码_2.png"><img alt="未对码_2" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_2.png" style="width: 800px;" />
+</a>
+</figure>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/未对码_3.png"><img alt="未对码_3" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_3.png" style="width: 800px;" />
+</a>
+</figure>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/未对码_4.png"><img alt="未对码_4" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_4.png" style="width: 800px;" />
+</a>
+</figure>
+</section>
+<section id="id6">
+<h3>4、上传重复单据<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>上传结果提示：</p>
+<ul class="simple">
+<li><p>单据上传失败！：单据号上传重复错误，请更改单据号</p></li>
+</ul>
+<p>可以把码上放心平台里的单据号修改一下，如：<span class="green-role">XSGHEF10179515</span> → <span class="green-role">XSGHEF10179515_1</span>，再重新上传单据号。</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/上传重复_1.png"><img alt="上传重复_1" src="_images/%E4%B8%8A%E4%BC%A0%E9%87%8D%E5%A4%8D_1.png" style="width: 800px;" />
+</a>
+</figure>
+<p>若客户只需要一个单据号，可以把码转移到原来的单据号中。<span class="green-role">入出库单查询</span> → <span class="green-role">详情</span> → <span class="green-role">单据详细信息</span> → <span class="green-role">追溯码信息</span> → <span class="green-role">全选</span> → <span class="green-role">转移</span> → <span class="green-role">提交。</span></p>
+<figure class="align-default">
+<a class="reference external image-reference" href="_images/上传重复_2.png"><img alt="上传重复_2" src="_images/%E4%B8%8A%E4%BC%A0%E9%87%8D%E5%A4%8D_2.png" style="width: 800px;" />
+</a>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="%E4%BB%93%E5%BA%93.html" class="btn btn-neutral float-left" title="仓库" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2025, itadmin。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

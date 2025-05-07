@@ -12,6 +12,7 @@
    :maxdepth: 2
 
    仓库.rst
+   其他问题处理.rst
    
 
 
