@@ -36,13 +36,6 @@
    </a>
    <br>
 
-.. raw:: html
-    
-   <a href="_images/logo.png" target="_blank" rel="noopener noreferrer">
-       <img src="_images/logo.png" alt="logo" style="width: 800px; display: block; margin: 0 auto;">
-   </a>
-   <br>
-
 2、上下级关联的码
 ^^^^^^^^^^^^^^^^^^
 上传结果提示：
