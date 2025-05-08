@@ -17,8 +17,8 @@
 
 .. raw:: html
     
-   <a href="/_images/追溯码上传异常处理.png" target="_blank" rel="noopener noreferrer">
-       <img src="/_images/追溯码上传异常处理.png" alt="追溯码上传异常处理" style="width: 800px; display: block; margin: 0 auto;">
+   <a href="source/_images/未激活码_2.png" target="_blank" rel="noopener noreferrer">
+       <img src="source\_images\未激活码_2.png" alt="追溯码上传异常处理" style="width: 800px; display: block; margin: 0 auto;">
    </a>
    <br>
 
