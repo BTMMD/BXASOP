@@ -18,8 +18,8 @@
 
 .. raw:: html
 
-   <a href="https://s21.ax1x.com/2025/05/08/pELD3Y8.png" target="_blank" rel="noopener noreferrer">
-       <img src="https://s21.ax1x.com/2025/05/08/pELD3Y8.png" alt="图片描述" style="width: 300px;">
+   <a href="logo.jpg" target="_blank" rel="noopener noreferrer">
+       <img src="logo.jpg" alt="图片描述" style="width: 300px;">
    </a>
    <br>
 
