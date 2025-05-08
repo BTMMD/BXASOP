@@ -18,8 +18,8 @@
 
 .. raw:: html
 
-   <a href="_images/logo.jpg" target="_blank" rel="noopener noreferrer">
-       <img src="_images/logo.jpg" alt="图片描述" style="width: 300px;">
+   <a href="logo.jpg" target="_blank" rel="noopener noreferrer">
+       <img src="logo.jpg" alt="图片描述" style="width: 300px;">
    </a>
    <br>
 
