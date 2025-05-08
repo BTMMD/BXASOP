@@ -18,7 +18,7 @@ extensions = [
               "myst_parser", # makedown
               "sphinxcontrib.mermaid", # 
               "sphinx_copybutton", # 代码粘贴
-              
+              "image_role",
 ]
 
 source_suffix = {

@@ -15,6 +15,28 @@
 
 首先需要在 `追溯码上传异常处理`_ 登记未激活的、不合格的码对应的商品名称、单位名称、单据号、建立时间、复核员、上传失败的原因，然后在“电子监管码记录修改”里查询此码并删除，最后重新查询此单再上传单据号。
 
+.. raw:: html
+
+   <style>
+       .centered-img {
+            display: block;
+            margin: 50% auto;
+            transform: translateY(-50%);
+        }
+   </style>
+   <a href="#" onclick="showLargeImage()">
+       <img src="_images/logo.jpg" alt="小图片" style="width: 200px;">
+   </a>
+   <div id="large-img-container" style="display: none;">
+       <img id="large-img" class="centered-img" src="_images/logo.jpg" alt="大图片">
+   </div>
+   <script>
+       function showLargeImage() {
+           var largeImgContainer = document.getElementById('large-img-container');
+           largeImgContainer.style.display = 'block';
+       }
+   </script>
+   <br>
 
 .. raw:: html
 
