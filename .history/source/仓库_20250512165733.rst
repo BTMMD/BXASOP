@@ -50,7 +50,7 @@
 .. figure:: _static/images/整件监管下架标签.png
     :target: _static/images/整件监管下架标签.png
     :alt: 整件监管下架标签
-    :width: 1000px
+    :width: 800px
     :align: center
 
 |
@@ -61,7 +61,7 @@
 .. figure:: _static/images/PDA电子监管.png
     :target: _static/images/PDA电子监管.png
     :alt: PDA电子监管
-    :width: 1000px
+    :width: 800px
     :align: center
 
 |

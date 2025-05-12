@@ -55,19 +55,7 @@
 
 |
 
-打开 ``电子监管`` ，扫描标签上的单据号二维码查询，根据唯一的标签号进行定位查询，扫码录入药品外箱的追溯码。
-（ :red:`注意：药品是未拆封的整件，确保外包装的大包装码包含所有子码` ）
 
-.. figure:: _static/images/PDA电子监管.png
-    :target: _static/images/PDA电子监管.png
-    :alt: PDA电子监管
-    :width: 1000px
-    :align: center
-
-|
-
-3、补货
-^^^^^^^^^^^^^^
 
 
 
