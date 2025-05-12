@@ -30,8 +30,6 @@
 
 |
 
-也可以在 ``库存`` 查询里进行移库操作
-
 .. figure:: _static/images/移库2.png
     :target: _static/images/移库2.png
     :alt: 移库2

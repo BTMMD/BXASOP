@@ -324,23 +324,6 @@ PDA端对应的界面
 ^^^^^^^^^^^^^^^^^^^^^
 ``入出库单`` → ``单据处理状态查询`` ，根据具体时间、单据号码查询处理状态 :red:`是否成功`。
 
-.. figure:: _static/images/验证1.png
-    :target: _static/images/验证1.png
-    :alt: 验证1
-    :width: 1400px
-    :align: center
-
-|
-
-可以在 ``入出单库查询`` 里，根据 ``单据号码`` 查看药品信息
-
-.. figure:: _static/images/验证2.png
-    :target: _static/images/验证2.png
-    :alt: 验证1
-    :width: 1400px
-    :align: center
-
-|
 
 
 

@@ -287,6 +287,62 @@ PDA端对应的界面
 |
 
 
+码上放心平台销售出库
+----------------------
+
+1、手动创建销售出库单据
+^^^^^^^^^^^^^^^^^^^^^^^
+``入出库单`` → ``药品入出库单上传``
+
+.. figure:: _static/images/MSFX销售出库1.png
+    :target: _static/images/MSFX销售出库1.png
+    :alt: MSFX销售出库1
+    :width: 1400px
+    :align: center
+
+|
+
+``手动创建单据`` → ``销售出库`` → ``依次填写所需信息``
+
+.. figure:: _static/images/MSFX销售出库2.png
+    :target: _static/images/MSFX销售出库2.png
+    :alt: MSFX销售出库2
+    :width: 1400px
+    :align: center
+
+|
+
+.. figure:: _static/images/MSFX销售出库3.png
+    :target: _static/images/MSFX销售出库3.png
+    :alt: MSFX销售出库3
+    :width: 1400px
+    :align: center
+
+|
+
+2、验证是否出库成功
+^^^^^^^^^^^^^^^^^^^^^
+``入出库单`` → ``单据处理状态查询`` ，根据具体时间、单据号码查询处理状态 :red:`是否成功`。
+
+.. figure:: _static/images/验证1.png
+    :target: _static/images/验证1.png
+    :alt: 验证1
+    :width: 1400px
+    :align: center
+
+|
+
+可以在 ``入出单库查询`` 里，根据 ``单据号码`` 查看药品信息
+
+.. figure:: _static/images/验证2.png
+    :target: _static/images/验证2.png
+    :alt: 验证1
+    :width: 1400px
+    :align: center
+
+|
+
+
 
 
 
