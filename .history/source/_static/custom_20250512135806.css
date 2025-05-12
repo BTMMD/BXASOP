@@ -1,0 +1,48 @@
+
+h1 {
+    text-align: center;
+}
+
+/* 设置图片样式：可以设置图片的边框、圆角、阴影等样式。 */
+img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}    
+
+/* 设置图片宽度：根据需要调整图片的显示宽度。 */
+img {
+    width: 80%; /* 可根据实际情况调整百分比 */
+    max-width: 100%;
+    height: auto;
+}
+
+/* 设置文字说明样式：可以修改文字的字体、颜色、大小、对齐方式等。 */
+.figure-caption {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px; /* 增加图片与文字说明之间的垂直间距 */
+    margin-bottom: 10px; /* 增加文字说明与下方内容之间的垂直间距 */
+}
+
+.figure {
+    text-align: center;
+}
+
+.red-role {
+    color: red;
+  }
+
+.green-role {
+    color: green;
+  }
+
+  code {
+    font-size: 1.1em;          /* 调整字体大小 */
+    border: 1px solid #ddd;   /* 添加细边框 */
+    padding: 0.1em 0.3em;     /* 内边距 */
+    border-radius: 3px;       /* 圆角 */
+    background-color: #f8f9fa; /* 背景色 */
+}

@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=0a1ee509" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=5b466d99" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -21,11 +21,13 @@
       <script src="_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="_static/copybutton.js?v=f281be69"></script>
       <script src="_static/translations.js?v=beaddf03"></script>
-      <script src="_static/my_custom.js?v=b07eb310"></script>
+      <script src="_static/my_custom.js?v=bfb95edf"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="prev" title="仓库" href="%E4%BB%93%E5%BA%93.html" /> 
+    <link rel="prev" title="仓库" href="%E4%BB%93%E5%BA%93.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,6 +58,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#id4">2、上下级关联的码</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id5">3、客户未对码</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id6">4、上传重复单据</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wms">WMS新增人员账号</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">1、管理平台</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2、功能平台</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">3、操作员信息维护</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">4、员工对应的可工作区域</a></li>
 </ul>
 </li>
 </ul>
@@ -99,18 +108,27 @@
 <li><p>单据上传失败！：以下码制校验不合格：90584950001623780161</p></li>
 </ul>
 <p>首先需要在 <a class="reference external" href="https://www.kdocs.cn/l/cthkkeqtbx1g">追溯码上传异常处理</a> 登记未激活的、不合格的码对应的商品名称、单位名称、单据号、建立时间、复核员、上传失败的原因，然后在“电子监管码记录修改”里查询此码并删除，最后重新查询此单再上传单据号。</p>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/追溯码上传异常处理.png"><img alt="追溯码上传异常处理" src="_images/%E8%BF%BD%E6%BA%AF%E7%A0%81%E4%B8%8A%E4%BC%A0%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.png" style="width: 800px;" />
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/追溯码上传异常处理.png"><img alt="追溯码上传异常处理" src="_images/%E8%BF%BD%E6%BA%AF%E7%A0%81%E4%B8%8A%E4%BC%A0%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.png" style="width: 1400px;" />
 </a>
 </figure>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/未激活码_1.png"><img alt="未激活码_1" src="_images/%E6%9C%AA%E6%BF%80%E6%B4%BB%E7%A0%81_1.png" style="width: 800px;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/未激活码_1.png"><img alt="未激活码_1" src="_images/%E6%9C%AA%E6%BF%80%E6%B4%BB%E7%A0%81_1.png" style="width: 1400px;" />
 </a>
 </figure>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/未激活码_2.png"><img alt="未激活码_2" src="_images/%E6%9C%AA%E6%BF%80%E6%B4%BB%E7%A0%81_2.png" style="width: 800px;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/未激活码_2.png"><img alt="未激活码_2" src="_images/%E6%9C%AA%E6%BF%80%E6%B4%BB%E7%A0%81_2.png" style="width: 1400px;" />
 </a>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="id4">
 <h3>2、上下级关联的码<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
@@ -119,10 +137,13 @@
 <li><p>单据上传失败！：有上下级关联码：[84112740002781421895（ 下级 ）, 86219380002249061490（ 上级 ）]；</p></li>
 </ul>
 <p>若上下级码的数量是对应关系则只需要保留上级码即可（ <span class="red-role">末尾需要加英文状态下的 “ , ”</span> ），反之只需删除上级码。</p>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/上级码.png"><img alt="上级码" src="_images/%E4%B8%8A%E7%BA%A7%E7%A0%81.png" style="width: 800px;" />
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/上级码.png"><img alt="上级码" src="_images/%E4%B8%8A%E7%BA%A7%E7%A0%81.png" style="width: 1400px;" />
 </a>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="id5">
 <h3>3、客户未对码<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
@@ -130,23 +151,35 @@
 <ul class="simple">
 <li><p>空白</p></li>
 </ul>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/未对码_1.png"><img alt="未对码_1" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_1.png" style="width: 800px;" />
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/未对码_1.png"><img alt="未对码_1" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_1.png" style="width: 1400px;" />
 </a>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>首先在码上放心平台查询是否添加此客户，然后再重新对码，最后运行定时任务重新上传单据，若查询不到信息需反馈给质管部。</p>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/未对码_2.png"><img alt="未对码_2" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_2.png" style="width: 800px;" />
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/未对码_2.png"><img alt="未对码_2" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_2.png" style="width: 1400px;" />
 </a>
 </figure>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/未对码_3.png"><img alt="未对码_3" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_3.png" style="width: 800px;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/未对码_3.png"><img alt="未对码_3" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_3.png" style="width: 1400px;" />
 </a>
 </figure>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/未对码_4.png"><img alt="未对码_4" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_4.png" style="width: 800px;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/未对码_4.png"><img alt="未对码_4" src="_images/%E6%9C%AA%E5%AF%B9%E7%A0%81_4.png" style="width: 1400px;" />
 </a>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="id6">
 <h3>4、上传重复单据<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
@@ -155,15 +188,129 @@
 <li><p>单据上传失败！：单据号上传重复错误，请更改单据号</p></li>
 </ul>
 <p>可以把码上放心平台里的单据号修改一下，如：<span class="green-role">XSGHEF10179515</span> → <span class="green-role">XSGHEF10179515_1</span>，再重新上传单据号。</p>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/上传重复_1.png"><img alt="上传重复_1" src="_images/%E4%B8%8A%E4%BC%A0%E9%87%8D%E5%A4%8D_1.png" style="width: 800px;" />
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/上传重复_1.png"><img alt="上传重复_1" src="_images/%E4%B8%8A%E4%BC%A0%E9%87%8D%E5%A4%8D_1.png" style="width: 1400px;" />
 </a>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>若客户只需要一个单据号，可以把码转移到原来的单据号中。<span class="green-role">入出库单查询</span> → <span class="green-role">详情</span> → <span class="green-role">单据详细信息</span> → <span class="green-role">追溯码信息</span> → <span class="green-role">全选</span> → <span class="green-role">转移</span> → <span class="green-role">提交。</span></p>
-<figure class="align-default">
-<a class="reference external image-reference" href="_static/images/上传重复_2.png"><img alt="上传重复_2" src="_images/%E4%B8%8A%E4%BC%A0%E9%87%8D%E5%A4%8D_2.png" style="width: 800px;" />
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/上传重复_2.png"><img alt="上传重复_2" src="_images/%E4%B8%8A%E4%BC%A0%E9%87%8D%E5%A4%8D_2.png" style="width: 1400px;" />
 </a>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="wms">
+<h2>WMS新增人员账号<a class="headerlink" href="#wms" title="Link to this heading"></a></h2>
+<p>新员工入职申请wms账号，仓库经理审核通过，it管理员添加账号。wms新增人员账号操作如下：</p>
+<section id="id7">
+<h3>1、管理平台<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>管理员账号下进入 <code class="docutils literal notranslate"><span class="pre">管理平台</span></code> ，添加用户赋予所需角色</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/管理平台.png"><img alt="管理平台" src="_images/%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">机构人事管理</span></code> → <code class="docutils literal notranslate"><span class="pre">职员管理</span></code> → <code class="docutils literal notranslate"><span class="pre">添加</span></code> → <code class="docutils literal notranslate"><span class="pre">填入基本信息</span></code></p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/职员管理.png"><img alt="职员管理" src="_images/%E8%81%8C%E5%91%98%E7%AE%A1%E7%90%86.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>在 <code class="docutils literal notranslate"><span class="pre">用户管理</span></code> 里可单独授权wms系统菜单功能</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/用户管理.png"><img alt="用户管理" src="_images/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>添加用户所需角色</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/用户角色管理.png"><img alt="用户角色管理" src="_images/%E7%94%A8%E6%88%B7%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id8">
+<h3>2、功能平台<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">基础资料</span></code>  → <code class="docutils literal notranslate"><span class="pre">职员信息</span></code>，PDA上显示的功能菜单</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/职员信息.png"><img alt="职员信息" src="_images/%E8%81%8C%E5%91%98%E4%BF%A1%E6%81%AF.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>PDA端对应的界面</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/PDA界面1.png"><img alt="PDA界面1" src="_images/PDA%E7%95%8C%E9%9D%A21.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/PDA界面2.png"><img alt="PDA界面2" src="_images/PDA%E7%95%8C%E9%9D%A22.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/PDA界面3.png"><img alt="PDA界面3" src="_images/PDA%E7%95%8C%E9%9D%A23.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/PDA界面5.png"><img alt="PDA界面4" src="_images/PDA%E7%95%8C%E9%9D%A24.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/PDA界面5.png"><img alt="PDA界面5" src="_images/PDA%E7%95%8C%E9%9D%A25.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id9">
+<h3>3、操作员信息维护<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>查看是否有拣货权限</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/操作员信息.png"><img alt="操作员信息" src="_images/%E6%93%8D%E4%BD%9C%E5%91%98%E4%BF%A1%E6%81%AF.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id10">
+<h3>4、员工对应的可工作区域<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>零货A区 -- B区 -- C区 -- D区 -- 不合格库 -- 虚拟库 -- 退货库 -- 越库</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="_static/images/区域拣货员维护.png"><img alt="区域拣货员维护" src="_images/%E5%8C%BA%E5%9F%9F%E6%8B%A3%E8%B4%A7%E5%91%98%E7%BB%B4%E6%8A%A4.png" style="width: 1400px;" />
+</a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 </section>
 </section>
