@@ -246,7 +246,7 @@ PDA端对应的界面
 .. figure:: _static/images/PDA界面5.png
     :target: _static/images/PDA界面5.png
     :alt: PDA界面5
-    :width: 1400px
+    :width: 800px
     :align: center
 
 |

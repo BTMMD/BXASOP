@@ -25,7 +25,7 @@
 .. figure:: _static/images/移库1.png
     :target: _static/images/移库1.png
     :alt: 移库1
-    :width: 1400px
+    :width: 1000px
     :align: center
 
 |
@@ -35,7 +35,7 @@
 .. figure:: _static/images/移库2.png
     :target: _static/images/移库2.png
     :alt: 移库2
-    :width: 1400px
+    :width: 1000px
     :align: center
 
 |
@@ -55,7 +55,7 @@
 .. figure:: _static/images/拣货员.png
     :target: _static/images/拣货员.png
     :alt: 零货下架操作界面
-    :width: 1400px
+    :width: 1000px
     :align: center
 
 |
