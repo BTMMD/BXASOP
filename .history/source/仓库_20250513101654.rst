@@ -82,14 +82,6 @@
 - 主动补货
     任务下发后，库存不够， ``主动补货`` → ``勾选`` → ``货整件数量`` → ``保存``
 
-.. figure:: _static/images/主动补货.png
-    :target: _static/images/主动补货.png
-    :alt: 主动补货
-    :width: 1000px
-    :align: center
-
-|
-
 
 
 
